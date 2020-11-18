@@ -1,0 +1,59 @@
+#big-picture {
+  width: 500px;
+  margin: auto;
+  border: 5px;
+  padding: 3px;
+}
+.contents {
+  background-color: rgb(219, 167, 35);
+  margin: auto;
+  padding: 2px;
+  height: 40px;
+  width: 500px;
+  border: solid;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#title {
+  margin-left: 500px ;
+  width: 500px;
+  padding: 1px;
+}
+.entries {
+  height: 150px;
+  width: 500px;
+  font: 16px serif;
+  line-height: 1.2;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#samurai1 {
+  width: 200px;
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 1px;
+}
+#samurai2 {
+  width: 200px;
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 1px;
+}
+body {
+  font-family: arial;
+}
+h2 {
+  font: bold 1.5em arial;
+  background-color: rgb(176, 103, 67);
+}
+
+h3 {
+  font: bold 1em arial;
+  margin: auto;
+  width: 500px;
+h6 {
+  text-decoration: underline;
+}
+p {
+  
+}
