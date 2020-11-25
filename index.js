@@ -1,5 +1,3 @@
-function popup () {
-    alert("Let the journey begin!");
-}
+let name = prompt("Hey, what's your name?")
 
-popup ();
+alert(`Thanks for visiting my page ${name}!`);
