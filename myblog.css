@@ -15,8 +15,9 @@
   overflow-x: hidden;
 }
 #title {
-  margin-left: 500px ;
-  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
   padding: 1px;
 }
 .entries {
