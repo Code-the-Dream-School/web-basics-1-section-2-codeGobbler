@@ -95,6 +95,7 @@ footer {
 /*nav bar div*/
 
 #nav {
+    align-self: center;
     list-style-type: none;
     margin-right: 1.5em;
     padding: 10;
