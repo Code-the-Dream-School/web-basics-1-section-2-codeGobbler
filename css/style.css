@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /*set flex specifications for body of html document to make all children flex items and set font*/
@@ -11,7 +13,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-image: repeating-linear-gradient(#556D77,#243841,#0A202A);
-    background-color: #6D5E52;
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
@@ -21,15 +22,8 @@ body {
 h2 {
     text-align: center;
     color: white;
+    margin-bottom: 5px;
     font-size: 15px;
-    background-color: #3C545E;
-}
-
-/*set footer alignment and color*/
-
-footer {
-    text-align-last: center;
-    text-decoration-color: #556D77;
     background-color: #3C545E;
 }
 
@@ -92,6 +86,10 @@ iframe {
 
 /*div for logo on left side of nav bar*/
 
+#name {
+  align-self: start;
+}
+
 #logo {
     text-align: center;
     font-size: 20px;
@@ -102,34 +100,64 @@ iframe {
     opacity: 80%;
 }
 
+/* sidebar div*/
+
+#sidebar {
+  position: absolute;
+  width: 60em;
+  height: 100%;
+  background: #0A202A;
+  transition: 1.94ms;
+}
+
+/* toggle button */
+
+#sidebar .toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 300px;
+}
+
+#sidebar.active {
+  right: 0;
+}
+
+.toggle-btn span {
+  width: 45px;
+  height: 4px;
+  background: white;
+  display: block;
+  margin-top: 4px;
+}
+
 /*nav bar div*/
 
 #nav {
     align-self: center;
     display: flex;
+    flex-direction: column;
     list-style-type: none;
-    margin-right: 1.5em;
-    padding: 10;
+    margin-top: 1em;
+    margin-right: 2.5em;
     color: black;
     background-color: #243841;
-    opacity: 100%;
-}
-
-/*css rules for styling nav items*/
-
-#logo,
-#nav a {
-    text-align: center;
-    display: block;
-    padding: 10px 15px;
 }
 
 /*nav bar links*/
 
 #nav a {
-    font-size: .95em;
     color: black;
+    text-align: center;
     text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*css rules for styling nav items*/
+
+#logo {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
 }
 
 /*changes color of links upon hover*/
@@ -142,7 +170,7 @@ iframe {
 /*css properties for main image*/
 
 #img {
-    display: inline;
+    /* display: inline; */
     /* justify-content: flex-start; */
     margin: auto;
     margin-top: 10px;
@@ -195,6 +223,21 @@ iframe {
         
     }
 
+    #sidebar {
+        position: absolute;
+        width: 5em;
+        height: 10em;
+        background: #0A202A;
+        right: -10em;
+        transition: 1.94ms;
+}
+
+    #sidebar .toggle-btn {
+        position: absolute;
+        top: 10px;
+        right: 200px;
+}
+
 }
 
 /*instructions for medium to large screens*/
@@ -202,17 +245,9 @@ iframe {
 @media (min-width: 825px) {
     
     #main-header {
-        flex-direction: row;
+        flex-direction: inherit;
         justify-content: space-between;
         width: 100%;
-        max-width: 1300px;
-    }
-
-    /*slightly enlarges picture upon hover*/
-    
-    #img:hover {
-        opacity: 90%;
-        width: 20%;
     }
 }
 
