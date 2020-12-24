@@ -94,7 +94,7 @@ const drawScore = () => {
   ctx.font = '10px Bungee Inline';
   ctx.fillText(`Score: ${score}`, canvas.width - 60, 20);
   if (score === 45) {
-    ctx.fillText(`Score: ${score} (MAX)`, canvas.width - 50, 20)
+    ctx.fillText(`MAX`, canvas.width - 45, 40);
   }
 }
 

@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: repeating-linear-gradient(#654932,#6D5E52,#AAA7A4);
+    background-image: repeating-linear-gradient(#556D77,#243841,#0A202A);
     background-color: #6D5E52;
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -20,16 +20,25 @@ body {
 
 h2 {
     text-align: center;
+    color: white;
     font-size: 15px;
-    background-color: #654932;
+    background-color: #3C545E;
 }
 
 /*set footer alignment and color*/
 
 footer {
     text-align-last: center;
-    text-decoration-color: #AAA7A4;
-    background-color: #AAA7A4;
+    text-decoration-color: #556D77;
+    background-color: #3C545E;
+}
+
+iframe {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
 }
 
 /*flex specifications for .row divs*/
@@ -51,7 +60,10 @@ footer {
 /*alignment for spotify playlist div*/
 
 .embed {
-    align-self: center;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    /* position: initial; */
 }
 
 /*settings for list items in two text entry divs*/
@@ -63,8 +75,8 @@ footer {
     text-align: center;
     align-items: center;
     flex: 1 5 200px;
-    border: double 2px #654932;
-    background-color: #898078;
+    border: double 2px #172F39;
+    background-color: #3C545E;
 }
 
 /*main header includes nav and logo objects*/
@@ -73,9 +85,8 @@ footer {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: black;
-    background-color: #898078;
-    border-radius: 2%;
+    color: white;
+    background-color: #0A202A;
     opacity: 80%;
 }
 
@@ -84,9 +95,8 @@ footer {
 #logo {
     text-align: center;
     font-size: 20px;
-    background-color: #68350A;
-    border: solid 1px #361a03;
-    border-radius: 90%;
+    background-color: #243841;
+    border: solid 1px #0A202A;
     margin-left: 1.5em;
     padding: 10px;
     opacity: 80%;
@@ -96,12 +106,13 @@ footer {
 
 #nav {
     align-self: center;
+    display: flex;
     list-style-type: none;
     margin-right: 1.5em;
     padding: 10;
     color: black;
-    background-color: #898078;
-    opacity: 80%;
+    background-color: #243841;
+    opacity: 100%;
 }
 
 /*css rules for styling nav items*/
@@ -125,20 +136,35 @@ footer {
 
 #nav a:hover,
 .stats a:hover {
-	color: #093a58;
+	color: #0d96eb;
 }
 
 /*css properties for main image*/
 
 #img {
-    display: flex;
-    justify-content: center;
+    display: inline;
+    /* justify-content: flex-start; */
     margin: auto;
     margin-top: 10px;
+    margin-bottom: 100px;
     width: 250px;
-    border: solid 2px #68350A;
+    border: solid 2px #0A202A;
     padding: 4px;
-    border-radius: 45em;
+    opacity: 100%
+}
+
+#head-div {
+  display: flex;
+  flex-direction: row;
+  background-image: url("https://media.gettyimages.com/videos/data-background-loopable-video-id841475444?s=640x640");
+  opacity: 60%;
+  max-height: 270px;
+  justify-content: space-between;
+}
+
+#role {
+  width: 75%;
+  align-self: center;
 }
 
 /*special instructtions for smaller screens*/
@@ -158,6 +184,10 @@ footer {
         align-items: center;
         width: 90%;
         margin: 0 auto;
+    }
+
+    #head-div {
+      flex-direction: column;
     }
 
     #nav {
