@@ -15,6 +15,7 @@ body {
     background-image: repeating-linear-gradient(#556D77,#243841,#0A202A);
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /*set title bar specifications for headings*/
@@ -93,8 +94,9 @@ iframe {
 
 #sidebar {
   position: absolute;
+  top: 0;
+  right: 0;
   width: 10em;
-  height: 100%;
   z-index: 1000;
 }
 
