@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Growth Blog</title>
-    <link rel="stylesheet" type="text/css" href="css/myblog.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="title"> Growth Blog</h1>
-      <ul id="nav">
-        <li class="a"><a href="https://www.linkedin.com/in/alton-michaux-114b941ba/">Contact</a></li>
-        <li class="a"><a href="https://github.com/codeGobbler">Projects</a></li>
-        <li class="a"><a href="index.html">Home</a></li>
-      </ul>
-    </header>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Growth Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/myblog.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+
+<body>
+	<nav id="main-header">
+		<div id="name">
+			<h1 id="logo">Alton Michaux</h1>
+		</div>
+
+		<div id="sidebar">
+			<div class="toggle-btn" onclick='show()'>
+				<span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul id="nav">
+          <li><a class="a" href="https://www.linkedin.com/in/alton-michaux-114b941ba/" target="_blank">Contact</a></li>
+          <li><a class="a" href="https://github.com/codeGobbler" target="_blank">GitHub</a></li>
+          <li><a class="a" href="blog.html" target="_blank">Blog</a></li>
+          <li><a class="a" href="breakout.html" target="blank">Games</a></li>
+        </ul>
+    </div> 
+      </nav>
     
     <div id="contents">
       <h1 id="title-img">
@@ -122,6 +136,6 @@
     <footer>
       <p1>alton.michaux@yahoo.com</p1>
     </footer>
-
+    <script src="js/myblog.js"></script>
   </body>
 </html>
