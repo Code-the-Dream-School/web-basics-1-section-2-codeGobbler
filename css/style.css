@@ -38,15 +38,16 @@ iframe {
 
 /*flex specifications for .row divs*/
 
-.row {
+.projects {
     flex: 1;
     flex-wrap: wrap;
+    flex-direction: column;
     margin: auto;
 }
 
 /*flex specifications for .col divs*/
 
-.col {
+.experience {
     flex-direction: column;
     text-align: center;
     flex: 1 1 250px;
@@ -58,9 +59,9 @@ iframe {
     margin: 20px;
     padding: 15px;
     list-style-type: none;
-    text-align: center;
-    align-items: center;
     flex: 1 5 200px;
+    flex-direction: column;
+    line-height: 2em;
     border: double 2px #172F39;
     background-color: #3C545E;
 }
