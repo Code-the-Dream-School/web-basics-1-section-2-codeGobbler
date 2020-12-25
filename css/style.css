@@ -93,9 +93,9 @@ iframe {
 
 #sidebar {
   position: absolute;
-  right: -10em;
   width: 10em;
   height: 100%;
+  z-index: 1000;
 }
 
 /* toggle button */
