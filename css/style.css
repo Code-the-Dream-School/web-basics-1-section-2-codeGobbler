@@ -51,15 +51,6 @@ iframe {
     flex: 1 1 250px;
 }
 
-/*alignment for spotify playlist div*/
-
-.embed {
-    display: flex;
-    width: 100%;
-    height: 90px;
-    /* position: initial; */
-}
-
 /*settings for list items in two text entry divs*/
 
 .stats {
@@ -76,12 +67,10 @@ iframe {
 /*main header includes nav and logo objects*/
 
 #main-header {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     color: white;
     background-color: #0A202A;
-    opacity: 80%;
 }
 
 /*div for logo on left side of nav bar*/
@@ -104,15 +93,14 @@ iframe {
 
 #sidebar {
   position: absolute;
-  width: 60em;
+  right: -10em;
+  width: 10em;
   height: 100%;
-  background: #0A202A;
-  transition: 1.94ms;
 }
 
 /* toggle button */
 
-#sidebar .toggle-btn {
+#sidebar.toggle-btn {
   position: absolute;
   top: 10px;
   right: 300px;
@@ -120,6 +108,7 @@ iframe {
 
 #sidebar.active {
   right: 0;
+  transition: .8s;
 }
 
 .toggle-btn span {
@@ -130,26 +119,30 @@ iframe {
   margin-top: 4px;
 }
 
-/*nav bar div*/
-
-#nav {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    margin-top: 1em;
-    margin-right: 2.5em;
-    color: black;
-    background-color: #243841;
+/*nav bar links*/
+#nav li a {
+  text-decoration: none;
+  color: white;
 }
 
-/*nav bar links*/
+/*nav bar div*/
 
-#nav a {
-    color: black;
+#sidebar ul {
+    position: relative;
+    flex-direction: column;
+    margin-top: -.7em;
+    margin-right: 1.2em;
+    text-decoration-color: white;
+    text-decoration: none;
+}
+
+#sidebar ul li {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
+    padding: 24px 20px;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /*css rules for styling nav items*/
@@ -167,24 +160,25 @@ iframe {
 	color: #0d96eb;
 }
 
+#sidebar ul li:hover {
+  padding-left: 10px;
+}
+
 /*css properties for main image*/
 
 #img {
-    /* display: inline; */
-    /* justify-content: flex-start; */
     margin: auto;
     margin-top: 10px;
     margin-bottom: 100px;
     width: 250px;
     border: solid 2px #0A202A;
     padding: 4px;
-    opacity: 100%
 }
 
 #head-div {
   display: flex;
   flex-direction: row;
-  background-image: url("https://media.gettyimages.com/videos/data-background-loopable-video-id841475444?s=640x640");
+  background-image: url("https://cdn.wallpapersafari.com/88/55/wGHkyg.jpg");
   opacity: 60%;
   max-height: 270px;
   justify-content: space-between;
@@ -215,19 +209,16 @@ iframe {
     }
 
     #head-div {
-      flex-direction: column;
+        flex-direction: column;
     }
 
     #nav {
         align-items: center;
-        
     }
 
     #sidebar {
         position: absolute;
-        width: 5em;
         height: 10em;
-        background: #0A202A;
         right: -10em;
         transition: 1.94ms;
 }
