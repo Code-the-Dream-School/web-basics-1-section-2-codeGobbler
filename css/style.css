@@ -273,6 +273,10 @@ canvas {
     width: 100%;
   }
 
+  #btn.active {
+    opacity: 50%;
+  }
+
   .portfolio {
     flex-direction: row;
   }

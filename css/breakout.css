@@ -34,7 +34,8 @@ canvas {
 }
 
 .btn:active {
-  transform: scale:0.98;
+  transform: .9s;
+  scale: 0.98;
 }
 
 .rules-btn {
@@ -57,7 +58,7 @@ canvas {
 }
 
 .rules.show {
-  transform: translateX(0);
+  transform: translateX(300);
   background-image: repeating-linear-gradient(#CE8555, #853E10, #371600);
   text-decoration: #0095dd;
 }
