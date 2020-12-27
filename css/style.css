@@ -36,37 +36,15 @@ iframe {
 }
 
 canvas {
-  display: flex;
-  /* align-self: right; */
-  width: 80%;
+  position: relative;
+  align-self: center;
+  width: 100%;
   border: 3px solid black;
+  margin-top: 14px;
 }
 
 .portfolio {
   display: flex;
-}
-/*flex specifications for .row divs*/
-
-.projects {
-  align-self: flex-end;
-  justify-content: right;
-  flex: 3 1 400px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-right: 170px;
-  margin-bottom: auto;
-  width: 45%;
-}
-
-/*flex specifications for .col divs*/
-
-.experience {
-  align-self: flex-start;
-  flex-direction: column;
-  margin-left: 168px;
-  width: 25%;
-  text-align: center;
-  flex: 1 1 250px;
 }
 
 /*settings for list items in two text entry divs*/
@@ -261,15 +239,25 @@ canvas {
     top: 10px;
     right: 200px;
   }
-}
 
-/* .experience {
-  align-self: center;
-  flex-direction: column;
-  width: 75%;
-  text-align: center;
-  flex: 1 1 250px;
-} */
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .experience {
+    margin: 0 auto;
+    width: 95%;
+    text-align: center;
+    flex: 2 1 250px;
+  }
+
+  .projects {
+    margin: 0 auto;
+    width: 95%;
+    flex: 1 2 250px;
+  }
+}
 
 /*instructions for medium to large screens*/
 
@@ -278,5 +266,30 @@ canvas {
     flex-direction: inherit;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .portfolio {
+    flex-direction: row;
+  }
+  /*flex specifications for .col divs*/
+
+  .experience {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 168px;
+    width: 25%;
+    text-align: center;
+    flex: 1 1 250px;
+  }
+
+  /*flex specifications for .row divs*/
+
+  .projects {
+    flex: 3 1 400px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 170px;
+    margin-bottom: auto;
+    width: 45%;
   }
 }
