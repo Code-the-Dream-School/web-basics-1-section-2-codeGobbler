@@ -24,7 +24,7 @@ h2 {
   text-align: center;
   margin-bottom: 5px;
   font-size: 15px;
-  background-color: #3c545e;
+  background-color: #0a202a;
 }
 
 iframe {
@@ -80,19 +80,6 @@ canvas {
 .col-titles {
   color: white;
   margin-top: 20px;
-}
-
-.canvas-container {
-  display: grid;
-}
-
-.project-grid {
-  display: grid;
-  grid-gap: 0 0;
-  padding: 0;
-  background-color: #243841;
-  margin-top: 15px;
-  grid-template-columns: 350px 350px;
 }
 
 /*main header includes nav and logo objects*/
@@ -286,11 +273,25 @@ canvas {
     width: 95%;
     flex: 1 2 250px;
   }
+
+  .canvas-container {
+    display: grid;
+  }
+  
+  .project-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 0 0;
+    padding: 0;
+    background-color: #243841;
+    margin-top: 5px;
+    grid-template-columns: 350px;
+  }
 }
 
 /*instructions for medium to large screens*/
 
-@media (min-width: 825px) {
+@media (min-width: 1024px) {
   #main-header {
     flex-direction: inherit;
     justify-content: space-between;
@@ -324,5 +325,18 @@ canvas {
     margin-right: 170px;
     margin-bottom: auto;
     width: 45%;
+  }
+
+  .canvas-container {
+    display: grid;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-gap: 0 0;
+    padding: 0;
+    background-color: #243841;
+    margin-top: 15px;
+    grid-template-columns: 350px 350px;
   }
 }
