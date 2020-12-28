@@ -44,6 +44,14 @@ canvas {
   margin-top: 14px;
 }
 
+.toggle-btn span {
+  width: 45px;
+  height: 4px;
+  background: white;
+  display: block;
+  margin-top: 4px;
+}
+
 .portfolio {
   display: flex;
 }
@@ -72,6 +80,18 @@ canvas {
 .col-titles {
   color: white;
   margin-top: 20px;
+}
+
+.canvas-container {
+  display: grid;
+  margin: 5px;
+}
+
+.project-grid {
+  display: inline-grid;
+  grid-gap: 5px 5px;
+  background-color: grey;
+  margin-top: 15px;
 }
 
 /*main header includes nav and logo objects*/
@@ -120,14 +140,6 @@ canvas {
 #sidebar.active {
   right: 0;
   transition: 0.8s;
-}
-
-.toggle-btn span {
-  width: 45px;
-  height: 4px;
-  background: white;
-  display: block;
-  margin-top: 4px;
 }
 
 /*nav bar links*/
@@ -199,6 +211,14 @@ canvas {
   color: white;
   width: 75%;
   align-self: center;
+}
+
+#project-1,
+#project-2,
+#project-3,
+#project-4 {
+  margin: 5px;
+  width: 45%;
 }
 
 /*special instructtions for smaller screens*/
