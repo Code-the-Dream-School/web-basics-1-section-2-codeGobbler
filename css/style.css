@@ -89,7 +89,8 @@ canvas {
 .project-grid {
   display: grid;
   grid-gap: 0 0;
-  background-color: grey;
+  padding: 0;
+  background-color: #243841;
   margin-top: 15px;
   grid-template-columns: 350px 350px;
 }
@@ -218,8 +219,10 @@ canvas {
 #project-3,
 #project-4 {
   /* flex-direction: row; */
-  width: 75%;
-  margin: .125em;
+  width: 99%;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 /*special instructtions for smaller screens*/
