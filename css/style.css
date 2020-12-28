@@ -87,8 +87,8 @@ canvas {
   /* flex-direction: row; */
   width: 99%;
   margin: 0 auto;
-  padding: 0;
-  margin-bottom: 15px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 
 /*main header includes nav and logo objects*/
