@@ -80,6 +80,15 @@ canvas {
 .col-titles {
   color: white;
   margin-top: 20px;
+  width: 100%;
+}
+
+.project-block {
+  /* flex-direction: row; */
+  width: 99%;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 15px;
 }
 
 /*main header includes nav and logo objects*/
@@ -201,17 +210,6 @@ canvas {
   align-self: center;
 }
 
-#project-1,
-#project-2,
-#project-3,
-#project-4 {
-  /* flex-direction: row; */
-  width: 99%;
-  margin: 0 auto;
-  padding: 0;
-  margin-bottom: 15px;
-}
-
 /*special instructtions for smaller screens*/
 
 @media (min-width: 100px) {
@@ -324,11 +322,12 @@ canvas {
     flex-direction: column;
     margin-right: 170px;
     margin-bottom: auto;
-    width: 45%;
+    width: 100%;
   }
 
   .canvas-container {
     display: grid;
+    width: 100%;
   }
   
   .project-grid {
