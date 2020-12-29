@@ -1,5 +1,6 @@
-/*used global box-sizing to include all divs*/
+/*tag settings*/
 
+/*used global box-sizing to include all divs*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +8,6 @@
 }
 
 /*set flex specifications for body of html document to make all children flex items and set font*/
-
 body {
   display: flex;
   flex-direction: column;
@@ -18,8 +18,7 @@ body {
   overflow-x: hidden;
 }
 
-/*set title bar specifications for headings*/
-
+/*set title bar specifications for text headings*/
 h2 {
   text-align: center;
   margin-bottom: 5px;
@@ -27,15 +26,7 @@ h2 {
   background-color: #0a202a;
 }
 
-iframe {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 90px;
-  opacity: 75%;
-}
-
+/*styling for project display blocks*/
 canvas {
   display: block;
   align-self: center;
@@ -45,6 +36,51 @@ canvas {
   margin-top: 14px;
 }
 
+/*styling for spotify player (footer)*/
+iframe {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  opacity: 75%;
+}
+
+/*=================================================*/
+
+/*class settings*/
+
+/*main header includes nav and logo elements*/
+.main-header {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #0a202a;
+}
+
+/*div for logo on left side of nav bar*/
+.name {
+  align-self: start;
+}
+
+.logo {
+  display: block;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 20px;
+  background-color: #243841;
+  border: solid 1px #0a202a;
+  margin-left: 1.5em;
+  opacity: 80%;
+}
+
+/*nav bar links*/
+.nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*menu button*/
 .toggle-btn span {
   width: 45px;
   height: 4px;
@@ -53,12 +89,44 @@ canvas {
   margin-top: 4px;
 }
 
+/*css properties for main image*/
+.img {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  width: 250px;
+  border: solid 2px #0a202a;
+  padding: 4px;
+}
+
+/*styling for div containing img and background*/
+.head-div {
+  display: flex;
+  flex-direction: row;
+  background-image: url("https://cdn.wallpapersafari.com/88/55/wGHkyg.jpg");
+  opacity: 60%;
+  max-height: 270px;
+  justify-content: space-between;
+}
+
+/*secondary 'web developer' heading*/
+.role {
+  color: white;
+  width: 75%;
+  align-self: center;
+}
+
+/*div containing 'experience' and 'projects' div*/
 .portfolio {
   display: flex;
 }
 
-/*settings for list items in two text entry divs*/
+/*div containing competent languages ol*/
+.list-div {
+  margin-top: 40px;
+}
 
+/*ol of competent languages settings*/
 .stats {
   margin: 20px;
   padding: 15px;
@@ -71,6 +139,7 @@ canvas {
   background-color: #3c545e;
 }
 
+/*individual list items for competent languages list*/
 .stats li {
   color: white;
   margin: 5px;
@@ -78,47 +147,32 @@ canvas {
   border-top: 1px solid #172f39;
 }
 
+/*changes color of nav and comp-lang links upon hover*/
+.nav a:hover,
+.stats a:hover {
+  color: #0d96eb;
+}
+
+/*settings for h2's over 'experience' and 'project' divs*/
 .col-titles {
   color: white;
   margin-top: 20px;
   width: 100%;
 }
 
+/*individual divs for project display grid*/
 .project-block {
-  /* flex-direction: row; */
   width: 99%;
   margin: 0 auto;
   padding: 5px;
   margin-bottom: 10px;
 }
 
-/*main header includes nav and logo objects*/
+/*=================================================*/
 
-#main-header {
-  margin: 0;
-  padding: 0;
-  color: white;
-  background-color: #0a202a;
-}
-
-/*div for logo on left side of nav bar*/
-
-#name {
-  align-self: start;
-}
-
-#logo {
-  text-align: center;
-  font-size: 20px;
-  background-color: #243841;
-  border: solid 1px #0a202a;
-  margin-left: 1.5em;
-  padding: 10px;
-  opacity: 80%;
-}
+/*id settings*/
 
 /* sidebar div*/
-
 #sidebar {
   position: absolute;
   top: 0;
@@ -128,26 +182,19 @@ canvas {
 }
 
 /* toggle button */
-
 #sidebar.toggle-btn {
   position: absolute;
   top: 10px;
   right: 300px;
 }
 
+/*sidebar active(clicked)*/
 #sidebar.active {
   right: 0;
   transition: 0.8s;
 }
 
-/*nav bar links*/
-#nav li a {
-  text-decoration: none;
-  color: white;
-}
-
 /*nav bar div*/
-
 #sidebar ul {
   position: relative;
   flex-direction: column;
@@ -157,6 +204,7 @@ canvas {
   text-decoration: none;
 }
 
+/*individual menu items*/
 #sidebar ul li {
   text-align: center;
   text-transform: uppercase;
@@ -166,56 +214,17 @@ canvas {
   text-decoration: none;
 }
 
-/*css rules for styling nav items*/
-
-#logo {
-  text-align: center;
-  display: block;
-  padding: 10px 15px;
-}
-
-/*changes color of links upon hover*/
-
-#nav a:hover,
-.stats a:hover {
-  color: #0d96eb;
-}
-
+/*changes link position on hover*/
 #sidebar ul li:hover {
   padding-left: 10px;
 }
 
-/*css properties for main image*/
+/*=================================================*/
 
-#img {
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 100px;
-  width: 250px;
-  border: solid 2px #0a202a;
-  padding: 4px;
-}
-
-#head-div {
-  display: flex;
-  flex-direction: row;
-  background-image: url("https://cdn.wallpapersafari.com/88/55/wGHkyg.jpg");
-  opacity: 60%;
-  max-height: 270px;
-  justify-content: space-between;
-}
-
-#role {
-  color: white;
-  width: 75%;
-  align-self: center;
-}
-
-/*special instructtions for smaller screens*/
-
+/*special instructions for smaller screens*/
 @media (min-width: 100px) {
-  #main-header,
-  #nav,
+  .main-header,
+  .nav,
   .row,
   .stats,
   .col,
@@ -223,36 +232,19 @@ canvas {
     display: flex;
   }
 
-  #main-header {
+  .main-header {
     flex-direction: column;
     align-items: center;
     width: 90%;
     margin: 0 auto;
   }
 
-  #head-div {
-    flex-direction: column;
-  }
-
-  #nav {
+  .nav {
     align-items: center;
   }
 
-  #sidebar {
-    position: absolute;
-    height: 10em;
-    right: -10em;
-    transition: 1.94ms;
-  }
-
-  #sidebar .toggle-btn {
-    position: absolute;
-    top: 10px;
-    right: 200px;
-  }
-
-  #btn.active {
-    opacity: 0%;
+  .head-div {
+    flex-direction: column;
   }
 
   .portfolio {
@@ -286,19 +278,33 @@ canvas {
     margin-top: 5px;
     grid-template-columns: 350px;
   }
+
+  #sidebar {
+    position: absolute;
+    height: 10em;
+    right: -10em;
+    transition: 1.94ms;
+  }
+
+  #sidebar .toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+  }
+
+  #btn.active {
+    opacity: 0%;
+  }
+
 }
 
 /*instructions for medium to large screens*/
 
 @media (min-width: 1024px) {
-  #main-header {
+  .main-header {
     flex-direction: inherit;
     justify-content: space-between;
     width: 100%;
-  }
-
-  #btn.active {
-    opacity: 50%;
   }
 
   .portfolio {
@@ -339,4 +345,9 @@ canvas {
     margin-top: 15px;
     grid-template-columns: 350px 350px;
   }
+  
+  #btn.active {
+    opacity: 50%;
+  }
+
 }
