@@ -20,24 +20,26 @@ toggleButton.addEventListener("click", () => {
 
 /*===============================================*/
 
-/*draw images on canvas*/
-
-//variables to select canvas elements and declare context
+/*draw project images on canvas*/
 
 //declare image variables
 const image = new Image() 
 image.src="images/playlist_Website.png"
+image.alt="Spotify Music Hub"
 
 const image2 = new Image() 
 image2.src="images/breakout_Game.png"
+image2.alt="Classic 'Breakout' Game"
 
 const image3 = new Image() 
 image3.src="images/spotify_Clone.png"
+image3.alt="Spotify Clone App"
 
 const image4 = new Image() 
 image4.src="images/battleship_Game.png"
+image4.alt="Classic Vs 'Battleship' Game"
 
-//create image object to store information for later use
+//create image array to store information for later use in loop
 const img = [
   image,
   image2,
@@ -47,13 +49,10 @@ const img = [
 
 //loop to place images in all canvases
 for (let i = 0; i < img.length; i++) {
-  console.log(img.length);
   let canvas = document.getElementsByClassName('canvas')[i];
-  console.log(canvas);
   let myContext = canvas.getContext('2d');
-  console.log(myContext);
   img[i].onload = () => {
-    myContext.drawImage(img[i], 0, 0, 1300, 1300, 0, 0, 300, 336);
+    myContext.drawImage(img[i], 20, 10, 1300, 1300, 0, 0, 300, 336);
   }
 }
 
