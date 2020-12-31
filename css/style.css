@@ -168,6 +168,10 @@ iframe {
   margin-bottom: 10px;
 }
 
+/* .projectImage {
+  
+} */
+
 /*=================================================*/
 
 /*id settings*/
@@ -222,7 +226,7 @@ iframe {
 /*=================================================*/
 
 /*special instructions for smaller screens*/
-@media (min-width: 100px) {
+@media (min-width: 500px) {
   .main-header,
   .nav,
   .row,
@@ -251,7 +255,7 @@ iframe {
     display: flex;
     flex-direction: column;
   }
-  
+
   .experience {
     margin: 0 auto;
     width: 95%;
@@ -268,13 +272,13 @@ iframe {
   .canvas-container {
     display: grid;
   }
-  
+
   .project-grid {
     margin: 0 auto;
     display: grid;
     grid-gap: 0 0;
     padding: 0;
-    background-color: #243841;
+    background-color: #141b1d;
     margin-top: 5px;
     grid-template-columns: 350px;
   }
@@ -295,7 +299,6 @@ iframe {
   #btn.active {
     opacity: 0%;
   }
-
 }
 
 /*instructions for medium to large screens*/
@@ -336,18 +339,17 @@ iframe {
     display: grid;
     width: 100%;
   }
-  
+
   .project-grid {
     display: grid;
     grid-gap: 0 0;
     padding: 0;
-    background-color: #243841;
+    background-color: #202f36;
     margin-top: 15px;
     grid-template-columns: 350px 350px;
   }
-  
+
   #btn.active {
     opacity: 50%;
   }
-
 }
