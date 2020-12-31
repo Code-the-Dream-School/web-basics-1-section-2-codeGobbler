@@ -1,3 +1,5 @@
+/*tag settings*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,7 +15,7 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-}
+
 h2 {
   text-align: center;
   color: white;
@@ -31,11 +33,19 @@ h3 {
   background-color: #3C545E;
 }
 
+p {
+  color: #8ba1aa;
+}
+
 footer {
   text-align-last: center;
   text-decoration-color: #AAA7A4;
   background-color: #AAA7A4;
 }
+
+/*=================================================*/
+
+/*class settings*/
 
 .header {
   list-style-type: none;
@@ -65,6 +75,10 @@ footer {
   padding: 3px;
 }
 
+.small-picture {
+  height: 250px;
+}
+
 .contents ul {
   background-color: #AAA7A4;
   text-align: center;
@@ -86,7 +100,7 @@ footer {
 }
 
 .date {
-  text-decoration-color: black;
+  color: white;
   text-decoration: underline;
 }
 
@@ -111,27 +125,6 @@ footer {
     opacity: 80%;
 }
 
-#sidebar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 10em;
-  z-index: 1000;
-}
-
-/* toggle button */
-
-#sidebar.toggle-btn {
-  position: absolute;
-  top: 10px;
-  right: 300px;
-}
-
-#sidebar.active {
-  right: 0;
-  transition: .8s;
-}
-
 .toggle-btn span {
   width: 45px;
   height: 4px;
@@ -144,26 +137,6 @@ footer {
 .nav li a {
   text-decoration: none;
   color: white;
-}
-
-/*nav bar div*/
-
-#sidebar ul {
-    position: relative;
-    flex-direction: column;
-    margin-top: -.7em;
-    margin-right: 1.2em;
-    text-decoration-color: white;
-    text-decoration: none;
-}
-
-#sidebar ul li {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 20px;
-    padding: 24px 20px;
-    list-style-type: none;
-    text-decoration: none;
 }
 
 /*css rules for styling nav items*/
@@ -179,10 +152,6 @@ footer {
 .nav a:hover,
 .stats a:hover {
 	color: #0d96eb;
-}
-
-#sidebar ul li:hover {
-  padding-left: 10px;
 }
 
 .title-img {
@@ -225,8 +194,57 @@ footer {
 .samurai2 {
   width: 200px;
   float: right;
-  margin-left: 5px;
-  margin-bottom: 1px;
+  margin: 5px;
+  padding: 5px;
+}
+
+/*=================================================*/
+
+/*id settings*/
+
+#sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10em;
+  z-index: 1000;
+}
+
+/* toggle button */
+
+#sidebar.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 300px;
+}
+
+#sidebar.active {
+  right: 0;
+  transition: .8s;
+}
+
+/*nav bar div*/
+
+#sidebar ul {
+    position: relative;
+    flex-direction: column;
+    margin-top: -.7em;
+    margin-right: 1.2em;
+    text-decoration-color: white;
+    text-decoration: none;
+}
+
+#sidebar ul li {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 24px 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#sidebar ul li:hover {
+  padding-left: 10px;
 }
 
 @media (min-width: 500px) {
@@ -237,6 +255,7 @@ footer {
   .contents {
     display: flex;
     flex-direction: column;
+    margin: 10px auto;
   }
 
   .header {
