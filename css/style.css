@@ -58,7 +58,7 @@ iframe {
   margin: 0;
   padding: 0;
   color: white;
-  background-color: #0a202a;
+  background-color: #0A202A;
 }
 
 /*div for logo on left side of nav bar*/
@@ -67,13 +67,12 @@ iframe {
 }
 
 .logo {
-  display: block;
-  padding: 10px 15px;
   text-align: center;
   font-size: 20px;
   background-color: #243841;
-  border: solid 1px #0a202a;
+  border: solid 1px #0A202A;
   margin-left: 1.5em;
+  padding: 10px;
   opacity: 80%;
   box-shadow: 0px 0px 4px black;
 }
@@ -193,8 +192,13 @@ iframe {
 }
 
 .text {
-  position: absolute;
+  position: relative;
   color: white;
+  text-align: center;
+}
+
+.proBlock:hover {
+  transform: scale(1.3);
 }
 
 /*=================================================*/
