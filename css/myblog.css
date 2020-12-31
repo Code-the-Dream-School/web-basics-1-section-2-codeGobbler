@@ -47,16 +47,6 @@ footer {
 
 /*class settings*/
 
-.header {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  color: black;
-  background-color: #3C545E;
-  border-radius: 2%;
-  opacity: 80%;
-}
-
 .title {
   text-align: center;
   font-size: 20px;
@@ -159,15 +149,6 @@ footer {
   justify-content: center;
   margin: auto;
   padding: 1px;
-}
-
-.nav {
-  list-style-type: none;
-  margin-right: 1.5em;
-  padding: 10;
-  color: black;
-  background-color: #556d77;
-  opacity: 80%;
 }
 
 .nav a {
