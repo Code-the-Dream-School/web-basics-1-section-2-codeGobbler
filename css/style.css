@@ -24,6 +24,7 @@ h2 {
   margin-bottom: 5px;
   font-size: 15px;
   background-color: #0a202a;
+  box-shadow: 0px 0px 4px black;
 }
 
 /*styling for project display blocks*/
@@ -34,6 +35,7 @@ canvas {
   border: 3px solid black;
   background-color: black;
   margin: 0 auto;
+  box-shadow: 0px 0px 4px black;
 }
 
 /*styling for spotify player (footer)*/
@@ -44,6 +46,7 @@ iframe {
   width: 100%;
   height: 70px;
   opacity: 75%;
+  box-shadow: 0px 0px 4px black;
 }
 
 /*=================================================*/
@@ -72,6 +75,7 @@ iframe {
   border: solid 1px #0a202a;
   margin-left: 1.5em;
   opacity: 80%;
+  box-shadow: 0px 0px 4px black;
 }
 
 .nav {
@@ -106,6 +110,7 @@ iframe {
   width: 250px;
   border: solid 2px #0a202a;
   padding: 4px;
+  box-shadow: 0px 0px 4px black;
 }
 
 /*styling for div containing img and background*/
@@ -128,6 +133,8 @@ iframe {
 /*div containing 'experience' and 'projects' div*/
 .portfolio {
   display: flex;
+  align-content: space-between;
+  margin-bottom: 40px;
 }
 
 /*div containing competent languages ol*/
@@ -146,6 +153,7 @@ iframe {
   line-height: 2em;
   border: double 4px white;
   background-color: #3c545e;
+  box-shadow: 0px 0px 8px black;
 }
 
 /*individual list items for competent languages list*/
@@ -154,6 +162,7 @@ iframe {
   margin: 5px;
   padding-top: 5px;
   border-top: 1px solid #172f39;
+  box-shadow: 0px 0px 4px black;
 }
 
 /*changes color of nav and comp-lang links upon hover*/
@@ -172,6 +181,7 @@ iframe {
 /*project-grid div*/
 .project-grid {
   margin: 0 auto;
+  box-shadow: 0px 0px 4px black;
 }
 
 /*individual divs for project display grid*/
@@ -219,7 +229,6 @@ iframe {
   flex-direction: column;
   margin-top: -0.7em;
   margin-right: 1.2em;
-  text-decoration-color: white;
   text-decoration: none;
 }
 
@@ -235,13 +244,13 @@ iframe {
 
 /*changes link position on hover*/
 #sidebar ul li:hover {
-  padding-left: 10px;
+  box-shadow: 0px 0px 4px black;
 }
 
 /*=================================================*/
 
 /*special instructions for smaller screens*/
-@media (min-width: 500px) {
+@media screen and (min-width: 150px) {
   .main-header,
   .nav,
   .row,
@@ -318,7 +327,7 @@ iframe {
 
 /*instructions for medium to large screens*/
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .main-header {
     flex-direction: inherit;
     justify-content: space-between;
